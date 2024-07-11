@@ -41,6 +41,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   height: 100%;
   width: 100%;
+  font-size: 12px;
 }
 a {
   -webkit-transition: all 0.3s ease;
@@ -64,18 +65,33 @@ a:hover {
 }
 @media (min-width: 992px) {
   #page {
-    margin: 48px auto;
+    /* margin: 48px auto; */
   }
 }
 @media (min-width: 1200px) {
   #page {
-    margin: 96px auto;
+    /* margin: 96px auto; */
     max-width: 1060px;
   }
+
+  .header-classic.cv-section {
+    padding: 0 3em;
+  }
+
+  .col-md-4-custom {
+    width: 20% !important;
+  }
+
+  .col-md-9-custom {
+    width: 80% !important;
+  }
+}
+.header-classic.cv-section {
+  padding: 1em 0;
 }
 .cv-section {
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 15px 0;
   border-top: 1px solid #E0E0E0;
   position: relative;
   *zoom: 1;
@@ -135,7 +151,6 @@ a:hover {
   font-weight: 300;
 }
 #header > .cv-section {
-  border-top: 10px solid #757575;
   border-bottom: 1px solid #E0E0E0;
 }
 #header .img-profile {
@@ -143,12 +158,7 @@ a:hover {
 }
 #header .social-box {
   height: 32px;
-  width: 192px;
-}
-@media print {
-  #header .social-box {
-    display: none;
-  }
+  margin: 0 auto 0 0;
 }
 #header .social-box i {
   width: 32px;
@@ -178,46 +188,46 @@ a:hover {
   #HEADER - header-classic
   ================================================================*/
 .header-classic h1 {
-  font-size: 48px;
-  margin-top: 40px;
+  font-size: 32px;
+  /* margin-top: 40px; */
 }
 .header-classic h2 {
   margin: 0;
-}
-.header-classic h1,
-.header-classic h2 {
-  text-align: center;
-}
-@media (min-width: 992px) {
-  .header-classic h1,
-  .header-classic h2 {
-    text-align: left;
-  }
-}
-.header-classic .right {
-  text-align: center;
-  margin-top: 24px;
-}
-@media (min-width: 992px) {
-  .header-classic .right {
-    text-align: left;
-    margin-top: 0;
-  }
-}
-.header-classic .social-box {
-  margin: 0 auto;
-}
-@media (min-width: 992px) {
-  .header-classic .social-box {
-    margin: 0;
-  }
+  font-size: 18px;
 }
 .header-classic .contact-info {
-  margin-top: 24px;
+  /* margin-top: 24px; */
+  text-align: left;
 }
 .header-classic .contact-info p {
   font-size: 13px;
   line-height: 22px;
+}
+.header-classic h1,
+.header-classic h2 {
+  text-align: left;
+}
+
+.header-classic .right {
+  text-align: right;
+  margin-top: 0;
+}
+
+.header-classic .social-box {
+  margin: 0;
+}
+.col-md-4-custom {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.col-md-3-custom {
+  width: 25%;
+}
+.col-md-9-custom {
+  float: left;
+  width: 70%;
 }
 /*================================================================
   #HEADER - header-bimg
@@ -414,14 +424,14 @@ a:hover {
 }
 .content h2 {
   margin: 0;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 300;
-  color: #BDBDBD;
-  margin-bottom: 48px;
+  /* color: #BDBDBD; */
+  margin-bottom: 1em;
 }
 .content h3 {
   margin-top: 0px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 .content h4 {
@@ -444,7 +454,13 @@ a:hover {
 .cv-item + .cv-item {
   border-top: 1px solid #E0E0E0;
   /* margin-top: 48px; */
-  padding-top: 48px;
+  padding: 15px 0;
+}
+.cv-item:first-child {
+  padding-bottom: 15px;
+}
+.cv-item:last-child {
+  padding-bottom: 0px;
 }
 .cv-item.list {
   border: none;
@@ -467,6 +483,7 @@ ul {
 }
 li {
   list-style: none;
+  text-align: justify;
 }
 li:before {
   font-family: 'FontAwesome';
@@ -540,11 +557,6 @@ li:before {
   padding: 24px;
   width: 324px;
   right: -324px;
-}
-@media print {
-  #contact-section {
-    display: none;
-  }
 }
 #contact-section .contact-welcome {
   margin-bottom: 24px;
@@ -637,15 +649,6 @@ li:before {
   color: #757575;
   position: fixed;
   display: none;
-}
-@media print {
-  .addon .settings-btn,
-  .addon .contact-btn,
-  .addon .to-top-btn,
-  .addon .print-btn,
-  .addon .download-btn {
-    display: none;
-  }
 }
 @media (min-width: 1200px) {
   .addon .settings-btn,
@@ -945,7 +948,7 @@ to {
     -moz-border-radius: 0;
     border-radius: 0;
   }
-  .cv-section {
+  /* .cv-section {
     padding: 44px 0;
-  }
+  } */
 }

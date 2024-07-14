@@ -228,3 +228,13 @@ li:before {
   position: relative;
   color: #757575;
 }
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .img-circle {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+}

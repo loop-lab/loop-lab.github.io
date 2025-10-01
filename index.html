@@ -1,245 +1,171 @@
 <!DOCTYPE html>
+<html lang="ru">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Владислав Ежов - Head of Development</title>
+<title>Владислав Ежов — TeamLead Go Developer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
+<!-- <style>
+  body { font-family: 'Open Sans', sans-serif; }
+  h1, h2, h3, h4 { margin-top: 0; }
+  #page.container { max-width: 980px; }
+  .cv-section { margin: 30px 0; }
+  .right { text-align: right; }
+  .header-classic .col-md-9-custom { width: 65%; float: left; }
+  .header-classic .col-md-4-custom { width: 35%; float: right; }
+  .social-box a { margin-left: 8px; font-size: 18px; }
+  .cv-item { margin-bottom: 28px; }
+  .cv-item ul { padding-left: 18px; margin-top: 10px; }
+  .cv-item li { margin-bottom: 6px; }
+  .contact-info p { margin: 12px 0 0; }
+  .skills-grid .col-xs-4, .skills-grid .col-xs-3 { margin-bottom: 10px; }
+  .section-title { margin-bottom: 8px; }
+  .clearfix::after { content: ""; display: table; clear: both; }
+</style> -->
 </head>
 <body>
 
 <div id="page" class="container">
   <div id="header">
-    <div class="header-classic cv-section">
+    <div class="header-classic cv-section clearfix">
       <div class="col-md-9-custom">
           <h1>Владислав Ежов</h1>
-          <h2>Head of Development</h2>
+          <h2>TeamLead Go Developer / Backend Lead</h2>
       </div>
       <div class="col-md-4-custom right">
         <div class="social-box">
-          <a href="https://www.linkedin.com/in/vladislav-ezhov-68baa2234" class="linkedin-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/loop-lab" class="github-icon" target="_blank"><i class="fa fa-github"></i></a>
-          <a href="https://t.me/no_auth" class="telegram-icon" target="_blank"><i class="fa fa-telegram"></i></a>
+          <a href="https://www.linkedin.com/in/vladislav-ezhov-68baa2234" class="linkedin-icon" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/loop-lab" class="github-icon" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i></a>
+          <a href="https://t.me/no_auth" class="telegram-icon" target="_blank" aria-label="Telegram"><i class="fa fa-telegram"></i></a>
         </div>
         <div class="contact-info">
           <p>
-            Email: <a href="mailto:me@vaezhov.ru">va_ezhov@mail.ru</a><br />
+            Email: <a href="mailto:va_ezhov@mail.ru">va_ezhov@mail.ru</a><br />
             Телефон: <a href="tel:+79263297724">+7 (926) 329-77-24</a><br />
-            Сайт: <a href="https://loop-lab.github.io/">loop-lab.github.io</a>
+            Сайт: <a href="https://loop-l-lab.github.io/">loop-lab.github.io</a>
           </p>
         </div>
       </div>
     </div>
   </div>
+
   <div id="content">
-    <div class="content cv-section">
+    <!-- Опыт работы -->
+    <div class="content cv-section clearfix">
       <div class="col-md-3">
-        <h2>Опыт работы</h2>
+        <h2 class="section-title">Опыт работы</h2>
       </div>
       <div class="col-md-9">
         <div class="cv-item">
-      <h3>TeamLead</h3>
-      <h4>VK, Полный день, Август 2024 – настоящее время</h4>
-      <br />
-      <p>Развитие высоконагруженного сервиса биллинга подписок и платных функций в кросплатформенной команде из 10 разработчиков (до 1700 rps).</p>
-      <ul>
-        <li>Обеспечил масштабируемость и отказоустойчивость системы с учётом SLA и пиковых нагрузок</li>
-        <li>Трансформировал ретроспективы в инструмент анализа и генерации инициатив</li>
-        <li>Внедрил ресурсное планирование и расчёт капасити, ввёл культуру декомпозиции</li>
-        <li>Участвовал в стратегическом развитии архитектуры и техстека</li>
-        <li>Настроил продуктивное взаимодействие между разработкой, продактами и аналитиками</li>
-      </ul>
-      <p><b>Технологии:</b> Go, Lua, Grafana, Tarantool, PostgreSQL, CI/CD</p>
-    </div>
+          <h3>TeamLead</h3>
+          <h4>VK, Полный день, Август 2024 – настоящее время</h4>
+          <p>Развитие высоконагруженного сервиса биллинга подписок и платных функций в команде из 8 человек.</p>
+          <ul>
+            <li>Обеспечил бесперебойную работу биллинга (&lt;0,1 % простоя в месяц), что позволило сохранить доверие пользователей и стабильный поток дохода.</li>
+            <li>Перестроил формат ретроспектив — команда стала чаще предлагать идеи, и релизы начали выходить быстрее (~15 % ускорение).</li>
+            <li>Внедрил ресурсное планирование: снял перегрузку с команды, и ребята начали стабильно укладываться в сроки без переработок.</li>
+            <li>Наладил работу между разработчиками, аналитиками и продактами — требования стали понятнее, ошибок меньше почти вдвое.</li>
+          </ul>
+        </div>
+
         <div class="cv-item">
-      <h3>CTO</h3>
-      <h4>Hey, Allie!, Полный день, Июнь 2023 – Июль 2024</h4>
-      <br />
-      <p>AI-продукт с возможностью масштабируемой кастомизации AI-персонажей.</p>
-      <ul>
-        <li>Проектировал архитектуру и запускал MVP и стабильную версию</li>
-        <li>Собрал и организовал команду (backend, frontend, ML, DevOps)</li>
-        <li>Разработал систему аналитики и мониторинга</li>
-        <li>Интегрировал и развивал AI-функциональность (AI-персонажи)</li>
-      </ul>
-      <p><b>Технологии:</b> Go, MongoDB, Clickhouse, MistralAI, React.js, Docker, Nginx</p>
-    </div>
-        
-    <div class="cv-item">
-      <h3>CTO</h3>
-      <h4>Teamly, Полный день, Март 2023 – Апрель 2024</h4>
-      <br />
-      <ul>
-        <li>Управление кросс-функциональной командой из 20 человек</li>
-        <li>Настроил структуру, процессы и зоны ответственности</li>
-        <li>Внедрил менторство, вырастил 5 тимлидов, обеспечил онбординг</li>
-        <li>Сформировал стратегию технического развития продукта</li>
-      </ul>
-      <p><b>Технологии:</b> Go, Node.js, React, PostgreSQL, Redis, Kafka, CI/CD, Scrum, Kanban</p>
-    </div>
+          <h3>TeamLead</h3>
+          <h4>Hey, Allie!, Полный день, Июнь 2023 – Июль 2024</h4>
+          <p>AI‑продукт с возможностью масштабируемой кастомизации AI‑персонажей.</p>
+          <ul>
+            <li>Запустил MVP за 4 месяца: продукт сразу собрал первые 10k пользователей и начал приносить первые продажи.</li>
+            <li>Сформировал команду и процесс онбординга: новичок теперь включался в работу за 2 недели вместо 4, а текучка снизилась до минимума.</li>
+            <li>Настроил систему метрик и мониторинга — нашли узкие места в API, ускорили ответы на 20 % и удержали больше пользователей.</li>
+            <li>Добавил AI-модули, из-за которых люди стали проводить в приложении дольше (+30 % к времени сессии) и охотнее продлевали подписку.</li>
+          </ul>
+        </div>
 
-    <div class="cv-item">
-      <h3>Руководитель отдела разработки</h3>
-      <h4>Qsoft, Полный день, Июль 2022 – Март 2023</h4>
-      <br />
-      <ul>
-        <li>Внедрил систему менторства и реорганизовал команды</li>
-        <li>Формировал и обучал команды, участвовавшие в 8 проектах</li>
-        <li>Разработал шаблоны типовых проектов на базе Kubernetes и CI/CD</li>
-      </ul>
-      <p><b>Ключевые технологии:</b> Go, Kubernetes, Docker, CI/CD, Agile/Scrum, Git Flow</p>
-      <p><b>Дополнительные технологии:</b> Laravel, PostgreSQL, Redis, Kafka, Nginx, Swagger</p>
-    </div>
+        <div class="cv-item">
+          <h3>TeamLead</h3>
+          <h4>Teamly, Полный день, Март 2023 – Апрель 2024</h4>
+          <ul>
+            <li>Внедрил OKR и синхронизацию процессов: команды перестали блокировать друг друга, количество зависимостей сократилось вдвое.</li>
+            <li>Разбил большую группу на 5 автономных команд и подготовил тимлидов — качество релизов выросло, критических багов стало меньше на четверть.</li>
+            <li>Составил технический roadmap — фичи начали доходить до продакшена на треть быстрее, бизнес смог быстрее проверять гипотезы.</li>
+          </ul>
+        </div>
 
-    <div class="cv-item">
-      <h3>TeamLead</h3>
-      <h4>Qsoft, Полный день, Август 2020 – Июль 2022</h4>
-      <br />
-      <ul>
-        <li>Настроил процессы менторства и передачи проектов</li>
-        <li>Спроектировал сервис продажи автозапчастей (1 млн SKU, 5000 rps)</li>
-        <li>Внедрил ElasticSearch и Redis для ускорения работы</li>
-      </ul>
-      <p><b>Технологии:</b> Go, Laravel, PostgreSQL, ElasticSearch, Redis, Highload, Graylog, Zabbix, Swagger</p>
-    </div>
+        <div class="cv-item">
+          <h3>TeamLead</h3>
+          <h4>Qsoft, Полный день, Июль 2022 – Март 2023</h4>
+          <ul>
+            <li>Автоматизировал развёртывание с помощью CI/CD и Kubernetes: новый проект запускался за 3 дня вместо недели.</li>
+            <li>Перестроил работу 8 проектных команд — стало возможно параллельно вести вдвое больше проектов без падения качества, а выручка выросла на 15 %.</li>
+          </ul>
+        </div>
 
-    <div class="cv-item">
-      <h3>PHP/Go разработчик</h3>
-      <h4>Qsoft, Полный день, Октябрь 2019 – Август 2020</h4>
-      <br />
-      <ul>
-        <li>Оптимизировал CMS, улучшил сбор заявок и аналитики</li>
-        <li>Интегрировал CRM, ускорил отклик сервера и снизил нагрузку</li>
-      </ul>
-      <p><b>Технологии:</b> PHP, Laravel, Bitrix, MySQL</p>
-    </div>
+        <div class="cv-item">
+          <h3>TeamLead</h3>
+          <h4>Qsoft, Полный день, Август 2020 – Июль 2022</h4>
+          <ul>
+            <li>Спроектировал сервис автозапчастей для 1 млн SKU и нагрузки в 5000 rps — он выдержал рост трафика и увеличил онлайн-продажи на 25 %.</li>
+            <li>Подключил ElasticSearch и Redis — поиск стал быстрее почти в два раза, пользователи охотнее кликали на выдачу (+20 % CTR) и приносили больше выручки.</li>
+          </ul>
+        </div>
+
+        <div class="cv-item">
+          <h3>Backend Developer (PHP/Go)</h3>
+          <h4>Qsoft, Полный день, Октябрь 2019 – Август 2020</h4>
+          <ul>
+            <li>Оптимизировал CMS: страницы открывались быстрее на 40 %, и это дало +15 % к конверсии заявок.</li>
+            <li>Внедрил CRM вместо почты — заявки перестали теряться, появилась база клиентов, повторные продажи и нормальная аналитика.</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="content cv-section">
+
+    <!-- Навыки -->
+    <div class="content cv-section clearfix">
       <div class="col-md-3">
-        <h2>Навыки</h2>
+        <h2 class="section-title">Навыки</h2>
       </div>
-      <div class="col-md-9">
+      <div class="col-md-9 skills-grid">
         <div class="container text-left col-xs-12">
           <div class="row">
-            <div class="col-xs-3">
-              <li>Go / GoLang</li>
-            </div>
-            <div class="col-xs-3">
-              <li>PHP</li>
-            </div>
-            <div class="col-xs-3">
-              <li>PostgreSQL</li>
-            </div>
-            <div class="col-xs-3">
-              <li>MySQL</li>
-            </div>
+            <div class="col-xs-3"><li>Go (Golang)</li></div>
+            <div class="col-xs-3"><li>PostgreSQL</li></div>
+            <div class="col-xs-3"><li>MySQL</li></div>
+            <div class="col-xs-3"><li>Redis</li></div>
           </div>
           <div class="row">
-            <div class="col-xs-3">
-              <li>MongoDB</li>
-            </div>
-            <div class="col-xs-3">
-              <li>ElasticSearch</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Redis</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Kafka</li>
-            </div>
+            <div class="col-xs-3"><li>Kafka</li></div>
+            <div class="col-xs-3"><li>Docker</li></div>
+            <div class="col-xs-3"><li>Kubernetes</li></div>
+            <div class="col-xs-3"><li>CI/CD</li></div>
           </div>
           <div class="row">
-            <div class="col-xs-3">
-              <li>Git</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Docker</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Kubernetes</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Linux</li>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">
-              <li>CI/CD</li>
-            </div>
-            <div class="col-xs-3">
-              <li>HTML/CSS</li>
-            </div>
-            <div class="col-xs-3">
-              <li>JS</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Vue.js</li>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">
-              <li>Laravel</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Kotlin</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Python</li>
-            </div>
-            <div class="col-xs-3">
-              <li>SQL</li>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">
-              <li>Highload</li>
-            </div>
-            <div class="col-xs-3">
-              <li>SOLID</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Clickhouse</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Nginx</li>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-3">
-              <li>Agile</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Scrum</li>
-            </div>
-            <div class="col-xs-3">
-              <li>SMART</li>
-            </div>
-            <div class="col-xs-3">
-              <li>Kanban</li>
-            </div>
+            <div class="col-xs-3"><li>Grafana</li></div>
+            <div class="col-xs-3"><li>ElasticSearch</li></div>
+            <div class="col-xs-3"><li>ClickHouse</li></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="content cv-section">
+
+    <!-- Образование -->
+    <div class="content cv-section clearfix">
       <div class="col-md-3">
-        <h2>Образование</h2>
+        <h2 class="section-title">Образование</h2>
       </div>
       <div class="col-md-9">
         <div class="cv-item">
           <h3>Московский технический университет связи и информатики</h3>
-          <h4>Бакалавр, Информатика и информационные технологии - 2023</h4>
+          <h4>Бакалавр, Информатика и информационные технологии — 2023</h4>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 
 </body>
 </html>
